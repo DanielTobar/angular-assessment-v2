@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="assessment">
+<html lang="en" ng-app="app">
 <head>
     <meta charset="UTF-8">
     <title>Front End Assessment</title>
     <link rel="stylesheet" href="./styles/app.css">
 </head>
-<body>
+<body >
 <!--This div wraps the entire page-->
     <div class="site-wrapper">
         <!--Here is your header with the navigation nested inside -->
@@ -17,10 +17,10 @@
                             <a ui-sref="pets">Pets</a>
                         </li>
                         <li>
-                            <a>Blog</a>
+                            <a ui-sref="blog">Blog</a>
                         </li>
                         <li>
-                            <a>About</a>
+                            <a ui-sref="about">About</a>
                         </li>
                     </ul>
 
@@ -34,7 +34,7 @@
         </header>
         <!--This is the main wrapper -->
         <main class="site-main" role="main">
-
+<ui-view></ui-view>
 
 
         </main>
@@ -44,5 +44,10 @@
 <!--ADD ALL YOUR SCRIPTS HERE -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+<script src='./app.js'></script>
+<script src='./mainCtrl.js'></script>
+<script src='./mainService.js'></script>
+<script src='./routes.js'></script>
+<script src='./bio.js'></script>
 </body>
 </html>
